@@ -10,7 +10,7 @@
     fileencoding = "utf-8";
     hlsearch = true;
     ignorecase = true;
-    smartindent = true;
+    smartindent = false;
     autoindent = true;
     splitbelow = true;
     splitright = true;

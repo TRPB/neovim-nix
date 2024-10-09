@@ -6,7 +6,7 @@
       italic = false;
     };
   };
-  
+
   # Treesitter is good but it makes highlighting colours somewhat arbitrary
   # Specify some nord colours to make syntax look nicer
   # TODO: Release as it's own treesitter plugin

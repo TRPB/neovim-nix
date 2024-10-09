@@ -49,10 +49,10 @@
           packages.neovide = pkgs.writeScriptBin "neovide" ''
             ${pkgs.neovide}/bin/neovide --neovim-bin ${nvim}/bin/nvim
           '';
-          packages.nixgl-neovide =  pkgs.writeScriptBin "nixgl-neovide" ''
-              nix run --override-input nixpkgs nixpkgs/nixos-unstable --impure github:nix-community/nixGL -- ${pkgs.neovide}/bin/neovide --neovim-bin ${nvim}/bin/nvim
+          packages.nixgl-neovide = pkgs.writeScriptBin "nixgl-neovide" ''
+            nix run --override-input nixpkgs nixpkgs/nixos-unstable --impure github:nix-community/nixGL -- ${pkgs.neovide}/bin/neovide --neovim-bin ${nvim}/bin/nvim
           '';
- 
+
         };
     };
 }

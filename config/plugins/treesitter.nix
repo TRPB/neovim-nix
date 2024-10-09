@@ -1,4 +1,4 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 {
   plugins.autoclose.enable = true;
   plugins.treesitter = {
@@ -7,9 +7,9 @@
       indent.enable = true;
       # For testing: :so $VIMRUNTIME/syntax/hitest.vim
       # Then use :Inspect on item you want to change
-     # grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-     #   php
-     # ];
+      # grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+      #   php
+      # ];
       highlight = {
         enable = true;
         custom_captures = {
