@@ -8,19 +8,69 @@ I'm one week into vim so using familar keybinds (Ctrl-C, Ctrl-V, Ctrl-S, etc). T
     - phpactor LSP
     - vim-test for testing (it's the only one I could find supporting behat and phpunit)
 
-## Usage: 
+## Usage:
 
-Nix-run:
+In nix using flakes
+
+`flake.nix`:
+
+```nix
+{
+    inputs = {
+        # ...
+        neovim.url = "github:TRPB/neovim-nix";
+    }
+
+    outputs = {
+        # ...
+        neovim,
+        ...
+    }@inputs: {
+        ./neovim.nix
+        _modlule.args = { inherit inputs };
+    }
+}
+```
+
+`neovim.nix`:
+
+```nix
+{ inputs, ...}:
+{
+    #for single users
+    users.users.yourusername.pacakges = [
+        # neovim 
+        inputs.neovim."x86_64-linux".default
+
+        # neovide
+        inputs.neovim."x86_64-linux".neovide
+    ];
+
+    # or system wide
+    environment.systemPacakges = [
+        # neovim 
+        inputs.neovim."x86_64-linux".default
+
+        # neovide
+        inputs.neovim."x86_64-linux".neovide
+    ];
+
+}
+```
+
+
+nix-run:
 
 ```bash
 # Terminal
-nix run https://github.com/TRPB/nixvim
+nix run github:TRPB/neovim-nix
 
 # Run Neovim in Neovide
-nix run https://github.com/TRPB/nixvim#neovide
+nix run github:TRPB/neovim-nix#neovide
 
 # If you're using nix on a different distro and you get an opengl error launch with the nixGL wrapper
-nix run https://github.com/TRPB/nixvim#nixgl-neovide
+nix run github:TRPB/neovim-nix#nixgl-neovide
+
 ```
 
 ## Keybinds
