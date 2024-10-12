@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.dap = {
     enable = true;
     extensions = {
@@ -11,13 +12,15 @@
         texthl = "DapBreakpointCondition";
       };
     };
-    configurations.php = [{
-      type = "php";
-      request = "launch";
-      name = "Listen for Xdebug";
-      port = 9003;
-      log = true;
-    }];
+    configurations.php = [
+      {
+        type = "php";
+        request = "launch";
+        name = "Listen for Xdebug";
+        port = 9003;
+        log = true;
+      }
+    ];
 
     adapters = {
       executables.php = {
@@ -32,19 +35,37 @@
 
   keymaps = [
     {
-      mode = [ "n" "i" "v" "t" "c" ];
+      mode = [
+        "n"
+        "i"
+        "v"
+        "t"
+        "c"
+      ];
       key = "<F1>";
       action = "function() require('dap').continue() end";
       lua = true;
     }
     {
-      mode = [ "n" "i" "v" "t" "c" ];
+      mode = [
+        "n"
+        "i"
+        "v"
+        "t"
+        "c"
+      ];
       key = "<F3>";
       action = "function() require('dapui').toggle() end";
       lua = true;
     }
     {
-      mode = [ "n" "i" "v" "t" "c" ];
+      mode = [
+        "n"
+        "i"
+        "v"
+        "t"
+        "c"
+      ];
       key = "<F2>";
       action = "function() require('dap').toggle_breakpoint() end";
       lua = true;

@@ -1,1 +1,7 @@
-{ pkgs, ... }: { extraPlugins = with pkgs.vimPlugins; [ ale vim-lsp-ale ]; }
+{ pkgs, ... }:
+{
+  extraPlugins = with pkgs.vimPlugins; [
+    ale
+    vim-lsp-ale
+  ];
+}

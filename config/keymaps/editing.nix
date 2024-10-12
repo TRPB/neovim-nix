@@ -1,7 +1,11 @@
 {
   keymaps = [
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "<C-Del>";
       action = ":dl<CR>";
     }
@@ -11,7 +15,11 @@
       action = "<Esc>:dl<CR>i";
     }
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "<C-d>";
       action = ":t.<CR>";
     }
@@ -26,7 +34,13 @@
       action = "i";
     }
     {
-      mode = [ "i" "c" "n" "v" "t" ];
+      mode = [
+        "i"
+        "c"
+        "n"
+        "v"
+        "t"
+      ];
       key = "<C-z>";
       action = "<Cmd>u<CR>";
     }

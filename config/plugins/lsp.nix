@@ -1,13 +1,19 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.luasnip.enable = true;
   #  plugins.ultisnips.enable = true;
   plugins.cmp = {
     enable = true;
     settings = {
       autoEnableSources = true;
-      experimental = { ghost_text = false; };
-      sources =
-        [ { name = "nvim_lsp"; } { name = "luasnip"; } { name = "buffer"; } ];
+      experimental = {
+        ghost_text = false;
+      };
+      sources = [
+        { name = "nvim_lsp"; }
+        { name = "luasnip"; }
+        { name = "buffer"; }
+      ];
     };
   };
   plugins.lsp = {
@@ -21,9 +27,15 @@
     };
     keymaps = {
       lspBuf = {
-        "<C-g>" = { action = "definition"; };
-        "<C-s-g>" = { action = "references"; };
-        k = { action = "hover"; };
+        "<C-g>" = {
+          action = "definition";
+        };
+        "<C-s-g>" = {
+          action = "references";
+        };
+        k = {
+          action = "hover";
+        };
       };
     };
   };
