@@ -7,37 +7,19 @@
     nixvim.url = "github:nix-community/nixvim";
   };
 
-  outputs =
-    {
-      nixpkgs,
-      nixvim,
-      flake-parts,
-      ...
-    }@inputs:
+  outputs = { nixpkgs, nixvim, flake-parts, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = [
-        "aarch64-linux"
-        "x86_64-linux"
-        "aarch64-darwin"
-        "x86_64-darwin"
-      ];
+      systems =
+        [ "aarch64-linux" "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
 
-      perSystem =
-        {
-          system,
-          pkgs,
-          self',
-          lib,
-          ...
-        }:
+      perSystem = { system, pkgs, self', lib, ... }:
         let
           nixvim' = nixvim.legacyPackages.${system};
           nvim = nixvim'.makeNixvimWithModule {
             inherit pkgs;
             module = ./config;
           };
-        in
-        {
+        in {
           checks = {
             default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
               inherit nvim;

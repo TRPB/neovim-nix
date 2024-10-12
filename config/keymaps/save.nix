@@ -6,11 +6,7 @@
       action = ":w<CR>";
     }
     {
-      mode = [
-        "v"
-        "i"
-        "t"
-      ];
+      mode = [ "v" "i" "t" ];
       key = "<C-s>";
       action = "<Esc>:w<CR>";
     }

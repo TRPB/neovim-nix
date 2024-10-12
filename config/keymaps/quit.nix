@@ -6,11 +6,7 @@
       action = ":q<CR>";
     }
     {
-      mode = [
-        "v"
-        "i"
-        "t"
-      ];
+      mode = [ "v" "i" "t" ];
       key = "<C-q>";
       action = "<Esc>:q<CR>";
     }
@@ -20,11 +16,7 @@
       action = ":q!<CR>";
     }
     {
-      mode = [
-        "v"
-        "i"
-        "t"
-      ];
+      mode = [ "v" "i" "t" ];
       key = "<C-s-q>";
       action = "<Esc>:q!<CR>";
     }
