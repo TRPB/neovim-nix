@@ -9,5 +9,6 @@
     ./toggleterm.nix
     ./treesitter.nix
     ./vim-test.nix
+    ./fugitive.nix
   ];
 }

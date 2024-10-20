@@ -1,0 +1,1 @@
+{ plugins.figuitive.enable = true; }
