@@ -1,32 +1,32 @@
 {
   config.opts = {
-    expandtab = true;
-    tabstop = 4;
-    softtabstop = 4;
-    shiftwidth = 4;
+    autoindent = true;
     clipboard = "unnamedplus";
-    # completeopt = [ "menuone" "noselect" ];
     conceallevel = 0;
+    cmdheight = 0;
+    cursorline = true;
+    expandtab = true;
     fileencoding = "utf-8";
     hlsearch = true;
     ignorecase = true;
+    linebreak = true;
+    number = true;
+    pumheight = 10;
+    scrolloff = 4;
+    shiftwidth = 4;
+    sidescrolloff = 8;
+    signcolumn = "yes";
     smartindent = false;
-    autoindent = true;
+    softtabstop = 4;
     splitbelow = true;
     splitright = true;
-    pumheight = 10;
+    tabstop = 4;
     termguicolors = true;
     timeoutlen = 300;
     undofile = true;
     updatetime = 300;
-    writebackup = false;
-    cursorline = true;
-    number = true;
-    signcolumn = "yes";
     wrap = false;
-    linebreak = true;
-    scrolloff = 4;
-    sidescrolloff = 8;
+    writebackup = false;
   };
 
   config.extraConfigLua = ''

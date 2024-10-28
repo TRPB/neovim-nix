@@ -9,18 +9,19 @@
   plugins.web-devicons.enable = true;
 
   extraConfigLua = ''
-    require("telescope").setup({
-    	defaults = {
-    		mappings = {
-    			i = { ["<C-v>"] = { "<C-r>+", type="command" } },
-    		},
-    	}
-    });
+     require("telescope").setup({
+       defaults = {
+         hidden = true;
+    	 mappings = {
+          	i = { ["<C-v>"] = { "<C-r>+", type="command" } },
+     	 },
+       }
+     });
   '';
 
   keymaps = [
     {
-      action = "<cmd>Telescope find_files<CR>";
+      action = "<cmd>Telescope find_files find_command=rg,--files,--no-ignore<CR>";
       key = "<C-p>";
       mode = [
         "n"
