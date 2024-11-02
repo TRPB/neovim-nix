@@ -10,6 +10,7 @@
     ./lualine.nix
     ./mini.nix
     ./nvim-tree.nix
+    ./octo.nix
     ./telescope.nix
     ./toggleterm.nix
     ./treesitter.nix

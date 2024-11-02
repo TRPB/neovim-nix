@@ -27,10 +27,10 @@
     };
     keymaps = {
       lspBuf = {
-        "<C-g>" = {
+        "gd" = {
           action = "definition";
         };
-        "<C-s-g>" = {
+        "gr" = {
           action = "references";
         };
         k = {
@@ -39,6 +39,60 @@
       };
     };
   };
+
+  keymaps = [
+    {
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
+      key = "gv";
+      action = ":vsplit<CR>:lua vim.lsp.buf.definition()<CR>";
+      options.silent = true;
+    }
+    {
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
+      key = "<leader>n";
+      action = ":PhpactorClassNew<CR>";
+      options.silent = true;
+    }
+    {
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
+      key = "<leader>c";
+      action = ":PhpactorCopyClassName<CR><CR>";
+      options.silent = true;
+    }
+    {
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
+      key = "<leader>i";
+      action = ":PhpactorImportClass<CR><CR>";
+      options.silent = true;
+    }
+    {
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
+      key = "<leader>f";
+      action = "<CMD>:let @\" = expand('%')<CR><CR>";
+      options.silent = true;
+    }
+
+  ];
 
   extraPlugins = [ pkgs.vimPlugins.phpactor ];
 
