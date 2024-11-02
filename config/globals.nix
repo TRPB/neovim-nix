@@ -28,7 +28,6 @@
     wrap = false;
     writebackup = false;
     neovide_text_gamma = 0.0;
+    mapleader = " ";
   };
-
-  globals.mapleader = " ";
 }
