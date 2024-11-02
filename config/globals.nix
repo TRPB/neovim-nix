@@ -27,10 +27,8 @@
     updatetime = 300;
     wrap = false;
     writebackup = false;
+    neovide_text_gamma = 0.0;
   };
 
-  config.extraConfigLua = ''
-    vim.g.neovide_text_gamma = 0.0
-    -- vim.g.neovide_text_contrast = 0.1
-  '';
+  globals.mapleader = " ";
 }
