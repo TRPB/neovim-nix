@@ -3,7 +3,13 @@
     {
       event = "BufWritePost";
       pattern = "*.php";
-      command = "silent ! <vim.g.php_cs_fixer_path> fix %";
+      callback = {
+        __raw = ''
+          function()
+            vim.cmd('silent ! ' .. vim.g.php_cs_fixer_path .. ' fix %')
+          end
+        '';
+      };
     }
     {
       event = "BufWritePost";
