@@ -18,6 +18,7 @@
       ];
       key = "<C-1>";
       action = "<Cmd>:TestNearest<CR>";
+      silent = true;
     }
     {
       mode = [
@@ -29,6 +30,7 @@
       ];
       key = "<C-2>";
       action = "<Cmd>:TestLast<CR>";
+      silent = true;
     }
     {
       mode = [
@@ -40,6 +42,7 @@
       ];
       key = "<C-3>";
       action = "<Cmd>:TestFile<CR>";
+      silent = true;
     }
     {
       mode = [ "t" ];
