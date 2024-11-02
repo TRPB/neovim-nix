@@ -16,8 +16,8 @@
         "t"
         "c"
       ];
-      key = "<C-1>";
-      action = "<Cmd>:TestNearest<CR>";
+      key = "tn";
+      action = "<Cmd>:TestNearest<CR><CR>";
       options.silent = true;
     }
     {
@@ -28,8 +28,8 @@
         "t"
         "c"
       ];
-      key = "<C-2>";
-      action = "<Cmd>:TestLast<CR>";
+      key = "tl";
+      action = "<Cmd>:TestLast<CR><CR>";
       options.silent = true;
     }
     {
@@ -40,8 +40,8 @@
         "t"
         "c"
       ];
-      key = "<C-3>";
-      action = "<Cmd>:TestFile<CR>";
+      key = "tf";
+      action = "<Cmd>:TestFile<CR><CR>";
       options.silent = true;
     }
     {

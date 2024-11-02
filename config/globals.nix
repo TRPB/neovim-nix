@@ -27,7 +27,7 @@
     updatetime = 300;
     wrap = false;
     writebackup = false;
-    neovide_text_gamma = 0.0;
-    mapleader = " ";
   };
+
+  config.globals.mapleader = " ";
 }

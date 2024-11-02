@@ -7,7 +7,8 @@
         "t"
       ];
       key = "<C-Del>";
-      action = ":dl<CR>";
+      action = ":dl<CR><CR>";
+      options.silent = true;
     }
     {
       mode = [ "i" ];
