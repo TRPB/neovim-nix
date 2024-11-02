@@ -1,6 +1,7 @@
 {
   imports = [
     ./ale.nix
+    ./config-local.nix
     ./dap.nix
     ./dashboard.nix
     ./gitsigns.nix

@@ -3,7 +3,7 @@
     {
       event = "BufWritePost";
       pattern = "*.php";
-      command = "silent ! vendor/bin/php-cs-fixer fix %";
+      command = "silent ! <vim.g.php_cs_fixer_path> fix %";
     }
     {
       event = "BufWritePost";
