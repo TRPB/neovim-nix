@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-  plugins.autoclose.enable = true;
   plugins.treesitter = {
     enable = true;
     settings = {

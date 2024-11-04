@@ -12,9 +12,6 @@
       mode = [
         "n"
         "v"
-        "i"
-        "t"
-        "c"
       ];
       key = "tn";
       action = "<Cmd>:TestNearest<CR><CR>";
@@ -24,9 +21,6 @@
       mode = [
         "n"
         "v"
-        "i"
-        "t"
-        "c"
       ];
       key = "tl";
       action = "<Cmd>:TestLast<CR><CR>";
@@ -36,9 +30,6 @@
       mode = [
         "n"
         "v"
-        "i"
-        "t"
-        "c"
       ];
       key = "tf";
       action = "<Cmd>:TestFile<CR><CR>";

@@ -4,6 +4,7 @@
     ./config-local.nix
     ./dap.nix
     ./dashboard.nix
+    ./fugitive.nix
     ./gitsigns.nix
     ./lsp.nix
     ./leap.nix
