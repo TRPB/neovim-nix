@@ -5,6 +5,7 @@
     ./dap.nix
     ./dashboard.nix
     ./fugitive.nix
+    ./gh.nix
     ./gitsigns.nix
     ./lsp.nix
     ./leap.nix
