@@ -1,6 +1,6 @@
 { lib, pkgs, ... }:
 let 
-  fromGitHub = rev: ref: repo: pkgs.vimUtils.buildVimPluginFrom2Nix {
+  fromGitHub = rev: ref: repo: pkgs.vimUtils.buildVimPlugin {
     pname = "${lib.strings.sanitizeDerivationName repo}";
     version = ref;
     src = builtins.fetchGit {
@@ -12,7 +12,7 @@ let
 in {
   extraPlugins = [
     pkgs.vimPlugins.litee-nvim
-    (fromGitHub "HEAD" "ebbaac254ef7dd6f85b439825fbce82d0dc84515" "ldelossa/gh.nvim")
+    (fromGitHub "ebbaac254ef7dd6f85b439825fbce82d0dc84515" "HEAD" "ldelossa/gh.nvim")
   ];
   extraConfigLua = ''
      require("litee.lib").setup()

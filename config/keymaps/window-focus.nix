@@ -2,6 +2,11 @@
   keymaps = [
     {
       mode = [ "n" ];
+      key = "<leader>v";
+      action = "<cmd>:vsplit<CR>";
+    }
+    {
+      mode = [ "n" ];
       key = "<C-Left>";
       action = "<C-w><Left>";
     }
