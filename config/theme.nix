@@ -31,6 +31,12 @@
     local yellow = "#ebcb8b";
     local green = "#a3be8c";
     local purple = "#b48ead";
+    if vim.g.neovide then
+      vim.g.nord_disable_background = false
+      vim.cmd[[colorscheme nord]]
+
+      vim.g.neovide_transparency = 0.5
+    end
 
     vim.api.nvim_set_hl(0, "@variable", { fg = frost3 })
     vim.api.nvim_set_hl(0, "@property", { fg = frost3 })
@@ -67,9 +73,5 @@
     vim.api.nvim_set_hl(0, "DapUIStepOut", { bg = polar2, fg = green })
     vim.api.nvim_set_hl(0, "DapUIStepOutNC", { bg = polar2, fg = green })
     vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = polar4 })
-
-    if vim.v.neovide then 
-      vim.g.neovide_transparency = 0.5
-    end
   '';
 }
