@@ -7,6 +7,7 @@
     ./fugitive.nix
     ./gh.nix
     ./gitsigns.nix
+    ./indent-blankline.nix
     ./lsp.nix
     ./leap.nix
     ./lualine.nix

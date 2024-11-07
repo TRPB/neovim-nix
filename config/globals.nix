@@ -27,6 +27,7 @@
     updatetime = 300;
     wrap = false;
     writebackup = false;
+    relativenumber = true;
   };
 
   config.globals.mapleader = " ";

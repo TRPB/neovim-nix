@@ -65,6 +65,6 @@
     vim.api.nvim_set_hl(0, "DapUIUnavailableNC", { bg = polar2, fg = polar1 })
     vim.api.nvim_set_hl(0, "DapUIStepOut", { bg = polar2, fg = green })
     vim.api.nvim_set_hl(0, "DapUIStepOutNC", { bg = polar2, fg = green })
-
+    vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = polar4 })
   '';
 }
