@@ -61,7 +61,7 @@
     vim.api.nvim_set_hl(0, "@constructor", { fg = frost1 })
     vim.api.nvim_set_hl(0, "@operator", { fg = snow1 })
     vim.api.nvim_set_hl(0, "@constant", { fg = orange })
-    vim.api.nvim_set_hl(0, "WinSeparator", { fg = polar2, bg = "NONE" })
+    vim.api.nvim_set_hl(0, "WinSeparator", { fg = polar3, bg = "NONE" })
     vim.api.nvim_set_hl(0, "@tag", { fg = frost4 })
     vim.api.nvim_set_hl(0, "@tag.attribute", { fg = frost3 })
     vim.api.nvim_set_hl(0, "@tag.attribute", { fg = frost3 })
