@@ -1,12 +1,5 @@
-{ pkgs, ... }:
-{
-  imports = [
-    ./globals.nix
-    ./keymaps
-    ./plugins
-    ./theme.nix
-    ./autocmd.nix
-  ];
+{ pkgs, ... }: {
+  imports = [ ./globals.nix ./keymaps ./theme.nix ./autocmd.nix ./plugins ];
 
   extraPlugins = with pkgs.vimPlugins; [ vim-nix ];
 }

@@ -1,10 +1,10 @@
 {
   imports = [
     ./ale.nix
-    ./config-local.nix
     ./dap.nix
     ./dashboard.nix
     ./fugitive.nix
+    ./firenvim.nix
     ./gh.nix
     ./gitsigns.nix
     ./indent-blankline.nix
@@ -18,5 +18,6 @@
     ./toggleterm.nix
     ./treesitter.nix
     ./vim-test.nix
+    ./config-local.nix
   ];
 }
