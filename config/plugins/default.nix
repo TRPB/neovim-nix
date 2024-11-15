@@ -14,6 +14,7 @@
     ./mini.nix
     ./nvim-tree.nix
     ./octo.nix
+    ./rest.nix
     ./telescope.nix
     ./toggleterm.nix
     ./treesitter.nix

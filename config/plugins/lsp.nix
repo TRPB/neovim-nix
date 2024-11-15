@@ -87,14 +87,14 @@
           ['<C-u>'] = cmp.mapping.scroll_docs(-4), -- Up
           ['<C-d>'] = cmp.mapping.scroll_docs(4), -- Down
           -- C-b (back) C-f (forward) for snippet placeholder navigation.
-          ['<Tab>'] = cmp.mapping(function(fallback)
+          ['<C-Tab>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.mapping.complete()
             else
               fallback();
             end 
           end, {'i', 's'}),
-          ['<CR>'] = cmp.mapping.confirm {
+          ['<Tab>'] = cmp.mapping.confirm {
             behavior = cmp.ConfirmBehavior.Replace,
             select = true,
           },
