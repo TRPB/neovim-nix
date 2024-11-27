@@ -16,7 +16,8 @@
     shiftwidth = 4;
     sidescrolloff = 8;
     signcolumn = "yes";
-    smartindent = false;
+    smartindent = true;
+    indentexpr = "";
     softtabstop = 4;
     splitbelow = true;
     splitright = true;

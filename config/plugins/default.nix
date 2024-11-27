@@ -1,11 +1,15 @@
 {
   imports = [
     ./ale.nix
+    ./autoclose.nix
+    ./config-local.nix
     ./dap.nix
     ./dashboard.nix
+    ./dressing.nix
     ./fugitive.nix
-    ./firenvim.nix
+    #./firenvim.nix
     ./gh.nix
+    #./gh.nix
     ./gitsigns.nix
     ./indent-blankline.nix
     ./lsp.nix
