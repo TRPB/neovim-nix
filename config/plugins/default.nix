@@ -12,6 +12,7 @@
     #./gh.nix
     ./gitsigns.nix
     ./indent-blankline.nix
+    ./kitty-navigator.nix
     ./lsp.nix
     ./leap.nix
     ./lualine.nix

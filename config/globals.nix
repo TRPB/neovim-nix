@@ -31,5 +31,8 @@
     relativenumber = true;
   };
 
-  config.globals.mapleader = " ";
+  config.globals = {
+    mapleader = " ";
+    kitty_navigator_no_mappings = 1;
+  };
 }

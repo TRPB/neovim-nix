@@ -15,7 +15,7 @@
     }
     {
       event = "BufEnter";
-      pattern = "*.php";
+      pattern = "*.html.php";
       callback = {
         __raw = ''
           function ()

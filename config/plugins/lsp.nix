@@ -1,19 +1,13 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   plugins.luasnip.enable = true;
   #  plugins.ultisnips.enable = true;
   plugins.cmp = {
     enable = true;
     settings = {
       autoEnableSources = true;
-      experimental = {
-        ghost_text = false;
-      };
-      sources = [
-        { name = "nvim_lsp"; }
-        { name = "luasnip"; }
-        { name = "buffer"; }
-      ];
+      experimental = { ghost_text = false; };
+      sources =
+        [ { name = "nvim_lsp"; } { name = "luasnip"; } { name = "buffer"; } ];
     };
   };
   plugins.lsp = {
@@ -27,85 +21,59 @@
     };
     keymaps = {
       lspBuf = {
-        "gd" = {
-          action = "definition";
-        };
-        k = {
-          action = "hover";
-        };
+        "gd" = { action = "definition"; };
+        "<leader>k" = { action = "hover"; };
       };
     };
   };
 
   keymaps = [
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
-      key = "gr";
-      action = ":Telescope lsp_references<CR>";
+      mode = [ "n" "v" "t" ];
+      key = "<leader>gr";
+      action = "<cmd>:Telescope lsp_references<CR>";
       options.silent = true;
     }
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
-      key = "gv";
-      action = ":vsplit<CR>:lua vim.lsp.buf.definition()<CR>";
+      mode = [ "n" "v" "t" ];
+      key = "<leader>gv";
+      action = "<cmd>:vsplit<CR>:lua vim.lsp.buf.definition()<CR>";
       options.silent = true;
     }
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
+      mode = [ "n" "v" "t" ];
       key = "<C-a>";
-      action = ":lua vim.lsp.buf.code_action()<CR>";
+      action = "<cmd>:lua vim.lsp.buf.code_action()<CR>";
       options.silent = true;
     }
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
+      mode = [ "n" "v" "t" ];
       key = "<leader>n";
-      action = ":PhpactorClassNew<CR>";
+      action = "<cmd>:PhpactorClassNew<CR>";
       options.silent = true;
     }
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
+      mode = [ "n" "v" "t" ];
       key = "<leader>c";
-      action = ":PhpactorCopyClassName<CR><CR>";
+      action = "<cmd>:PhpactorCopyClassName<CR><CR>";
       options.silent = true;
     }
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
+      mode = [ "n" "v" "t" ];
       key = "<leader>i";
-      action = ":PhpactorImportClass<CR><CR>";
+      action = "<cmd>:PhpactorImportClass<CR><CR>";
       options.silent = true;
     }
     {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
+      mode = [ "n" "v" "t" ];
+      key = "<leader>t";
+      action = "<cmd>:PhpactorTransform<CR><CR>";
+      options.silent = true;
+    }
+    {
+      mode = [ "n" "v" "t" ];
       key = "<leader>f";
-      action = ''<CMD>:let @" = expand('%')<CR><CR>'';
+      action = "<cmd>:let @+ = expand('%')<CR><CR>";
       options.silent = true;
     }
 

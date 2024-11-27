@@ -8,22 +8,26 @@
     {
       mode = [ "n" ];
       key = "<C-Left>";
-      action = "<C-w><Left>";
+      #action = "<C-w><Left>";
+      action = "<CMD>:KittyNavigateLeft<CR>";
     }
     {
       mode = [ "n" ];
       key = "<C-Right>";
-      action = "<C-w><Right>";
+      #action = "<C-w><Right>";
+      action = "<CMD>:KittyNavigateRight<CR>";
     }
     {
       mode = [ "n" ];
       key = "<C-Up>";
-      action = "<C-w><Up>";
+      #action = "<C-w><Up>";
+      action = "<CMD>:KittyNavigateUp<CR>";
     }
     {
       mode = [ "n" ];
       key = "<C-Down>";
-      action = "<C-w><Down>";
+      #action = "<C-w><Down>";
+      action = "<CMD>:KittyNavigateDown<CR>";
     }
 
     {
