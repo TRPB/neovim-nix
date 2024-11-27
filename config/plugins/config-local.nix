@@ -4,6 +4,7 @@
   extraConfigLua = ''
     require('config-local').setup {
       config_files = { ".nvim.lua" },
+      silent = true;
     }
   '';
 }

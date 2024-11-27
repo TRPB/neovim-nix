@@ -2,6 +2,9 @@
   plugins = {
     nvim-tree = {
       enable = true;
+      git = {
+        ignore = false;
+      };
     };
   };
 

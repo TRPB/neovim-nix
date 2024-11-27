@@ -1,13 +1,19 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.luasnip.enable = true;
   #  plugins.ultisnips.enable = true;
   plugins.cmp = {
     enable = true;
     settings = {
       autoEnableSources = true;
-      experimental = { ghost_text = false; };
-      sources =
-        [ { name = "nvim_lsp"; } { name = "luasnip"; } { name = "buffer"; } ];
+      experimental = {
+        ghost_text = false;
+      };
+      sources = [
+        { name = "nvim_lsp"; }
+        { name = "luasnip"; }
+        { name = "buffer"; }
+      ];
     };
   };
   plugins.lsp = {
@@ -21,45 +27,83 @@
     };
     keymaps = {
       lspBuf = {
-        "gd" = { action = "definition"; };
-        k = { action = "hover"; };
+        "gd" = {
+          action = "definition";
+        };
+        k = {
+          action = "hover";
+        };
       };
     };
   };
 
   keymaps = [
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "gr";
       action = ":Telescope lsp_references<CR>";
       options.silent = true;
     }
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "gv";
       action = ":vsplit<CR>:lua vim.lsp.buf.definition()<CR>";
       options.silent = true;
     }
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
+      key = "<C-a>";
+      action = ":lua vim.lsp.buf.code_action()<CR>";
+      options.silent = true;
+    }
+    {
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "<leader>n";
       action = ":PhpactorClassNew<CR>";
       options.silent = true;
     }
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "<leader>c";
       action = ":PhpactorCopyClassName<CR><CR>";
       options.silent = true;
     }
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "<leader>i";
       action = ":PhpactorImportClass<CR><CR>";
       options.silent = true;
     }
     {
-      mode = [ "n" "v" "t" ];
+      mode = [
+        "n"
+        "v"
+        "t"
+      ];
       key = "<leader>f";
       action = ''<CMD>:let @" = expand('%')<CR><CR>'';
       options.silent = true;
