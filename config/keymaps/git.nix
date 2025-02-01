@@ -2,14 +2,14 @@
   keymaps = [
     {
       mode = [ "n" ];
-      key = "<leader>gs";
+      key = "gg";
       action = "<CMD>:Git<CR>";
       options.silent = true;
     }
 
     {
       mode = [ "n" ];
-      key = "<leader>gb";
+      key = "gb";
       action = "<CMD>:Git blame<CR><CR>";
       options.silent = true;
     }

@@ -7,7 +7,7 @@
         __raw = ''
           function()
             if vim.g.php_cs_fixer_path ~= nil then
-              vim.cmd('silent ! ' .. vim.g.php_cs_fixer_path .. ' fix %')
+              vim.cmd('silent ! ' .. vim.g.php_cs_fixer_path .. ' fix %:.')
             end
           end
         '';

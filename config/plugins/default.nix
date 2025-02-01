@@ -5,12 +5,11 @@
     ./config-local.nix
     ./dap.nix
     ./dashboard.nix
-    ./dressing.nix
     ./fugitive.nix
     #./firenvim.nix
-    ./gh.nix
     #./gh.nix
     ./gitsigns.nix
+    ./himalaya.nix
     ./indent-blankline.nix
     ./kitty-navigator.nix
     ./lsp.nix
@@ -18,6 +17,8 @@
     ./lualine.nix
     ./mini.nix
     ./nvim-tree.nix
+    ./noice.nix
+    ./nvim-notify.nix
     ./octo.nix
     ./rest.nix
     ./telescope.nix
@@ -25,5 +26,6 @@
     ./treesitter.nix
     ./vim-test.nix
     ./config-local.nix
+    ./tiny-glimmer.nix
   ];
 }

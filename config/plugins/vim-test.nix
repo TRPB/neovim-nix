@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  plugins.neotest.enable = true;
   extraPlugins = with pkgs.vimPlugins; [ vim-test ];
 
   extraConfigLua = ''
@@ -13,7 +14,7 @@
         "n"
         "v"
       ];
-      key = "tn";
+      key = "<leader>tn";
       action = "<Cmd>:TestNearest<CR><CR>";
       options.silent = true;
     }
@@ -22,7 +23,7 @@
         "n"
         "v"
       ];
-      key = "tl";
+      key = "<leader>tl";
       action = "<Cmd>:TestLast<CR><CR>";
       options.silent = true;
     }
@@ -31,7 +32,7 @@
         "n"
         "v"
       ];
-      key = "tf";
+      key = "<leader>tf";
       action = "<Cmd>:TestFile<CR><CR>";
       options.silent = true;
     }
