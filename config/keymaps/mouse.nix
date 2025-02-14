@@ -4,12 +4,12 @@
       mode = [
         "n"
         "v"
-        "i"
         "t"
       ];
-      key = "<C-s>";
-      action = "<cmd>:w<CR>";
+      key = "<MiddleMouse";
+      action = "<Nop>";
       options.silent = true;
+
     }
   ];
 }

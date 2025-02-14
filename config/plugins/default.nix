@@ -27,5 +27,6 @@
     ./vim-test.nix
     ./config-local.nix
     ./tiny-glimmer.nix
+    ./snacks.nix
   ];
 }

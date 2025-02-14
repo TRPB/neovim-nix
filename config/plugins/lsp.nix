@@ -4,6 +4,7 @@
   #  plugins.ultisnips.enable = true;
   plugins.cmp = {
     enable = true;
+
     settings = {
       autoEnableSources = true;
       experimental = {
@@ -46,7 +47,6 @@
       ];
       key = "grr";
       action = "<cmd>:Telescope lsp_references<CR>";
-      options.silent = true;
     }
     {
       mode = [
@@ -192,7 +192,7 @@
             behavior = cmp.ConfirmBehavior.Replace,
             select = true,
           },
-          ['j']  = cmp.mapping(function(fallback)
+          ['<C-j>']  = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.select_next_item()
             elseif luasnip.expand_or_jumpable() then
@@ -210,7 +210,7 @@
               fallback()
             end
           end, { 'i', 's' }),
-          ['k'] = cmp.mapping(function(fallback)
+          ['<C-k>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.select_prev_item()
             elseif luasnip.jumpable(-1) then
