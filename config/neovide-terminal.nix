@@ -4,6 +4,11 @@ in
 {
   autoCmd = [
     {
+      event = "BufEnter";
+      pattern = "term://*";
+      command = "startinsert";
+    }
+    {
       event = "TermEnter";
       pattern = "*";
       command = "startinsert";
@@ -38,7 +43,7 @@ in
     }
     {
       mode = [ "t" ];
-      key = "<C-o>";
+      key = "<S-Esc>";
       action = "<cmd>setlocal number relativenumber laststatus=2 mouse=a scl=yes<cr><C-\\><C-n>";
     }
   ];
