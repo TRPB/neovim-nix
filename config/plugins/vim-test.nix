@@ -45,10 +45,5 @@
       action = "<Cmd>:TestFile<CR><CR>";
       options.silent = true;
     }
-    {
-      mode = [ "t" ];
-      key = "<C-O>";
-      action = "<C-\\><C-n>";
-    }
   ];
 }
