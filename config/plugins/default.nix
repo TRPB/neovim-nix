@@ -1,17 +1,19 @@
 {
   imports = [
-    ./ale.nix
+    # ./ale.nix
     ./autoclose.nix
     ./config-local.nix
     ./dap.nix
     ./dashboard.nix
     ./fugitive.nix
+    ./dbee.nix
+    ./tabby.nix
     #./firenvim.nix
     #./gh.nix
     ./gitsigns.nix
-    ./himalaya.nix
     ./indent-blankline.nix
     ./kitty-navigator.nix
+    ./kitty-scrollback.nix
     ./lsp.nix
     ./leap.nix
     ./lualine.nix
@@ -20,6 +22,7 @@
     ./noice.nix
     ./nvim-notify.nix
     ./octo.nix
+    #./phpstan.nix
     ./rest.nix
     ./telescope.nix
     ./toggleterm.nix

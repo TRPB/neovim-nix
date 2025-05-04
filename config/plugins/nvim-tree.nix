@@ -5,6 +5,7 @@
       git = {
         ignore = false;
       };
+      syncRootWithCwd = true;
     };
   };
 

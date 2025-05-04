@@ -23,6 +23,15 @@
         "n"
         "v"
       ];
+      key = "<leader>tt";
+      action = "<Cmd>:TestNearest<CR><CR>";
+      options.silent = true;
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>tl";
       action = "<Cmd>:TestLast<CR><CR>";
       options.silent = true;
@@ -38,7 +47,7 @@
     }
     {
       mode = [ "t" ];
-      key = "<C-o>";
+      key = "<C-O>";
       action = "<C-\\><C-n>";
     }
   ];

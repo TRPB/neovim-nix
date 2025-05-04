@@ -1,11 +1,9 @@
 { pkgs, ... }:
 {
+  plugins.dap-virtual-text.enable = true;
+  plugins.dap-ui.enable = true;
   plugins.dap = {
     enable = true;
-    extensions = {
-      dap-ui.enable = true;
-      dap-virtual-text.enable = true;
-    };
     signs = {
       dapBreakpoint = {
         text = "●";

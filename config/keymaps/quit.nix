@@ -5,11 +5,17 @@
       key = "<C-q>";
       action = ":q<CR>";
     }
+
+    {
+      mode = [ "t" ];
+      key = "<C-q>";
+      action = "<C-\\><C-n>:q<CR>";
+    }
+
     {
       mode = [
         "v"
         "i"
-        "t"
       ];
       key = "<C-q>";
       action = "<Esc>:q<CR>";

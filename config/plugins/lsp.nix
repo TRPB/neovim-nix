@@ -22,7 +22,9 @@
     inlayHints = true;
     servers = {
       html.enable = true;
-      phpactor.enable = true;
+      phpactor = {
+        enable = true;
+      };
       jsonls.enable = true;
       yamlls.enable = true;
     };
@@ -65,7 +67,7 @@
         "t"
       ];
       key = "gri";
-      action = ":lua vim.lsp.buf.implementation()<CR>";
+      action = "<cmd>:Telescope lsp_implementations<CR>";
       options.silent = true;
     }
     {
@@ -82,7 +84,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "gra";
       action = "<cmd>:lua vim.lsp.buf.code_action()<CR>";
@@ -92,17 +93,15 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "gO";
-      action = "<cmd>:lua vim.lsp.buf.document_symbol()<CR>";
+      action = "<cmd>:Telescope lsp_document_symbols<CR>";
       options.silent = true;
     }
     {
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "grs";
       action = "<cmd>:lua vim.lsp.buf.signature_help()<CR>";
@@ -112,7 +111,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "<leader>n";
       action = "<cmd>:PhpactorClassNew<CR>";
@@ -122,7 +120,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "<leader>c";
       action = "<cmd>:PhpactorCopyClassName<CR><CR>";
@@ -132,9 +129,8 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
-      key = "gi";
+      key = "<leader>i";
       action = "<cmd>:PhpactorImportClass<CR>";
       options.silent = true;
     }
@@ -142,7 +138,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "gt";
       action = "<cmd>:PhpactorTransform<CR><CR>";
@@ -152,7 +147,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "<leader>f";
       action = "<cmd>:let @+ = expand('%')<CR><CR>";

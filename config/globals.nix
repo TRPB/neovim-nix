@@ -29,6 +29,7 @@
     wrap = false;
     writebackup = false;
     relativenumber = true;
+    mouse = "";
   };
 
   config.globals = {

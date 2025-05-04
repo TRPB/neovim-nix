@@ -11,6 +11,7 @@
   # Treesitter is good but it makes highlighting colours somewhat arbitrary
   # Specify some nord colours to make syntax look nicer
   # TODO: Release as it's own treesitter plugin
+
   extraConfigLua = ''
     local polar1 = "#2e3440";
     local polar2 = "#3b4252";
@@ -35,7 +36,8 @@
       vim.g.nord_disable_background = false
       vim.cmd[[colorscheme nord]]
 
-      vim.g.neovide_transparency = 0.5
+      vim.g.neovide_opacity = 1
+      vim.g.neovide_normal_opacity = 0.5
       vim.g.neovide_scale_factor = 1.0
       local change_scale_factor = function(delta)
         vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta

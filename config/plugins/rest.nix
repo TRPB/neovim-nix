@@ -1,9 +1,8 @@
 {
   plugins.rest = {
     enable = true;
-    settings.result.behavior.formatters = {
-
-      json = "jq";
-    };
+    #    settings.result.behavior.formatters = {
+    #  json = "jq";
+    #};
   };
 }
