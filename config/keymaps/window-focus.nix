@@ -67,6 +67,72 @@
       action = "<cmd>:tabnew +term<cr>";
     }
     {
+      mode = [
+        "n"
+        "t"
+        "i"
+        "c"
+        "s"
+        "l"
+        "v"
+      ];
+      key = "<A-v>";
+      action = "<cmd>:vsplit +term<cr>";
+    }
+    {
+      mode = [
+        "n"
+        "t"
+        "i"
+        "c"
+        "s"
+        "l"
+        "v"
+      ];
+      key = "<C-S-Up>";
+      action = "<cmd>:lua require('smart-splits').resize_up()<cr>";
+    }
+    {
+      mode = [
+        "n"
+        "t"
+        "i"
+        "c"
+        "s"
+        "l"
+        "v"
+      ];
+      key = "<C-S-Down>";
+      action = "<cmd>:lua require('smart-splits').resize_down()<cr>";
+    }
+    {
+      mode = [
+        "n"
+        "t"
+        "i"
+        "c"
+        "s"
+        "l"
+        "v"
+      ];
+      key = "<C-S-Left>";
+      action = "<cmd>:lua require('smart-splits').resize_left()<cr>";
+    }
+    {
+      mode = [
+        "n"
+        "t"
+        "i"
+        "c"
+        "s"
+        "l"
+        "v"
+      ];
+      key = "<C-S-Right>";
+      action = "<cmd>:lua require('smart-splits').resize_right()<cr>";
+    }
+
+    {
       mode = [ "n" ];
       key = "<leader>v";
       action = "<cmd>:vsplit<CR>";
