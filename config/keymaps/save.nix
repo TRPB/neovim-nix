@@ -5,7 +5,6 @@
         "n"
         "v"
         "i"
-        "t"
       ];
       key = "<C-s>";
       action = "<cmd>:w<CR>";

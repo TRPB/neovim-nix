@@ -22,11 +22,9 @@
     inlayHints = true;
     servers = {
       html.enable = true;
-      phpactor = {
-        enable = true;
-      };
       jsonls.enable = true;
       yamlls.enable = true;
+      phpactor.enable = true;
     };
     keymaps = {
       lspBuf = {
@@ -45,7 +43,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "grr";
       action = "<cmd>:Telescope lsp_references<CR>";
@@ -54,7 +51,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "gdd";
       action = "<cmd>:vsplit<CR>:lua vim.lsp.buf.definition()<CR>";
@@ -64,7 +60,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "gri";
       action = "<cmd>:Telescope lsp_implementations<CR>";
@@ -74,7 +69,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "grn";
       action = "<cmd>:lua vim.lsp.buf.rename()<CR>";
@@ -155,19 +149,20 @@
 
   ];
 
+  # Required for :PhpactorCopyClassName etc
+  # These don't seem available via LSP yet
   extraPlugins = [ pkgs.vimPlugins.phpactor ];
 
   extraConfigLua = ''
       require'lspconfig'.phpactor.setup{
-        on_attach = on_attach,
-        init_options = {
-            ["language_server_phpstan.enabled"] = true,
-            ["language_server_php_cs_fixer.enabled"] = true,
-            ["language_server_psalm.enabled"] = false,
-            
-          }
-      }
-
+         on_attach = on_attach,
+         filetypes = {'php'},
+         root_dir = function(pattern)
+           local util = require('lspconfig.util')
+           return util.root_pattern('composer.json', '.git')(pattern)
+         end,
+       }
+      
       local cmp = require('cmp')
       local luasnip = require('luasnip');
       cmp.setup {

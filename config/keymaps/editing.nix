@@ -4,7 +4,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "<C-Del>";
       action = ":dl<CR><CR>";
@@ -19,7 +18,6 @@
       mode = [
         "n"
         "v"
-        "t"
       ];
       key = "<C-d>";
       action = ":t.<CR>";
@@ -40,7 +38,6 @@
         "c"
         "n"
         "v"
-        "t"
       ];
       key = "<C-z>";
       action = "<Cmd>u<CR>";

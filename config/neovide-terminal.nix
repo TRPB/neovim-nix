@@ -1,5 +1,6 @@
 let
-  disableGui = "setlocal nonumber norelativenumber laststatus=0 mouse-=a scl=no ft=term stl=%{repeat('─',winwidth('.'))}";
+  disableGui = "setlocal nonumber norelativenumber mouse-=a scl=no ft=term";
+  enableGui = "setlocal number relativenumber mouse=a scl=yes ft=";
 in
 {
   autoCmd = [
@@ -9,6 +10,12 @@ in
       command = "startinsert";
     }
     {
+      event = "WinEnter";
+      pattern = "term://*";
+      command = "startinsert";
+    }
+
+    {
       event = "TermEnter";
       pattern = "*";
       command = "startinsert";
@@ -17,6 +24,11 @@ in
       event = "TermOpen";
       pattern = "*";
       command = disableGui;
+    }
+    {
+      event = "TermOpen";
+      pattern = "*";
+      command = "startinsert";
     }
     {
       event = "TermEnter";
