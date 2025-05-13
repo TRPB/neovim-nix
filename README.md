@@ -1,6 +1,6 @@
 # Tom's nixvim configuration
 
-I'm one week into vim so using familar keybinds (Ctrl-C, Ctrl-V, Ctrl-S, etc). They're not optimised!
+Desiged to run using neovide as a terminal 
 
 - Nord theme (customised)
 - Designed for PHP development:
