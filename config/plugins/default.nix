@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./ale.nix
+    ./ale.nix
     ./autoclose.nix
     ./config-local.nix
     ./dap.nix
