@@ -25,6 +25,11 @@
       jsonls.enable = true;
       yamlls.enable = true;
       phpactor.enable = true;
+      rust_analyzer = {
+        enable = true;
+        installCargo = true;
+        installRustc = true;
+      }
     };
     keymaps = {
       lspBuf = {
