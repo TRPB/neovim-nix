@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   plugins.luasnip.enable = true;
-  #  plugins.ultisnips.enable = true;
   plugins.cmp = {
     enable = true;
 
@@ -29,7 +28,7 @@
         enable = true;
         installCargo = true;
         installRustc = true;
-      }
+      };
     };
     keymaps = {
       lspBuf = {
