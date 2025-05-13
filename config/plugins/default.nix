@@ -13,8 +13,6 @@
     ./gitsigns.nix
     ./himalaya.nix
     ./indent-blankline.nix
-    ./kitty-navigator.nix
-    ./kitty-scrollback.nix
     ./lsp.nix
     ./leap.nix
     ./lualine.nix

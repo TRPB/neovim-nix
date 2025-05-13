@@ -165,74 +165,58 @@
     {
       mode = [
         "n"
-        "t"
       ];
       key = "<C-Left>";
-      #action = "<C-w><Left>";
-      action = "<CMD>:KittyNavigateLeft<CR>";
+      action = "<C-w><Left>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
-      key = "<C-J>";
-      #action = "<C-w><Left>";
-      action = "<CMD>:KittyNavigateDown<CR>";
+      key = "<C-j>";
+      action = "<C-w><Left>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
-      key = "<C-K>";
-      #action = "<C-w><Left>";
-      action = "<CMD>:KittyNavigateUp<CR>";
+      key = "<C-k>";
+      action = "<C-w><Left>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
-      key = "<C-H>";
-      #action = "<C-w><Left>";
-      action = "<CMD>:KittyNavigateLeft<CR>";
+      key = "<C-h>";
+      action = "<C-w><Left>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
-      key = "<C-L>";
-      #action = "<C-w><Left>";
-      action = "<CMD>:KittyNavigateRight<CR>";
+      key = "<C-l>";
+      action = "<C-w><Right>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
       key = "<C-Right>";
-      #action = "<C-w><Right>";
-      action = "<CMD>:KittyNavigateRight<CR>";
+      action = "<C-w><Right>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
       key = "<C-Up>";
-      #action = "<C-w><Up>";
-      action = "<CMD>:KittyNavigateUp<CR>";
+      action = "<C-w><Up>";
     }
     {
       mode = [
         "n"
-        "t"
       ];
       key = "<C-Down>";
-      #action = "<C-w><Down>";
-      action = "<CMD>:KittyNavigateDown<CR>";
+      action = "<C-w><Down>";
     }
     {
       mode = [
@@ -262,7 +246,34 @@
       key = "<C-Down>";
       action = "<C-\\><C-n><C-w><Down>";
     }
-
+    {
+      mode = [
+        "t"
+      ];
+      key = "<C-l>";
+      action = "<C-\\><C-n><C-w><Left>";
+    }
+    {
+      mode = [
+        "t"
+      ];
+      key = "<C-h>";
+      action = "<C-\\><C-n><C-w><Right>";
+    }
+    {
+      mode = [
+        "t"
+      ];
+      key = "<C-k>";
+      action = "<C-\\><C-n><C-w><Up>";
+    }
+    {
+      mode = [
+        "t"
+      ];
+      key = "<C-j>";
+      action = "<C-\\><C-n><C-w><Down>";
+    }
     {
       mode = [
         "v"
