@@ -77,11 +77,10 @@ nix run github:TRPB/neovim-nix#nixgl-neovide
 
 ### Tests
 
-Ctrl + number keys
 
-- `<C-1>` run nearest test
-- `<C-2>` rerun last test
-- `<C-3>` test file
+- `<leader>tn` run nearest test
+- `<leadeR>tn` rerun last test
+- `<leader>tf` test file
 
 ### Debugging
 
@@ -93,15 +92,28 @@ F1-F4
 
 ### Terminal
 
-- `<C-\`>` Toggle terminal
+- Desiged for running with neovide as a terminal
 
 ### LSP
 
-- `<C-g>` Goto definition
-- `<C-s-g>` find references
+- `gd` Goto definition
+- `grr` find references
+- `gri` find implementations
+- `grn` rename
+- `<leader>c` copy class name from current buffer (php only)
+- `<leader>f` copy file name of current buffer
 
 ### Telescope
 
 - `<C-p>` Find files (Can you tell I spent some years on sublime text?)
 - `<C-/>` Live grep
+- `<C-g>` Git branches
+- `<C-b>` Buffers
 
+
+### Tools
+
+- `gg` Open fugitive git ui
+- `<C-o>` open octo options
+- `<leader>rr` Rest run (.http files only)
+- `<F12>` Open Dbee (configure with `.nvim.lua` per project)
