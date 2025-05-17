@@ -16,6 +16,11 @@
       ];
     };
   };
+
+  extraConfigVim = ''
+    let g:PhpactorRootDirectoryStrategy = {-> getcwd() }
+  '';
+
   diagnostic.settings.virtual_text = true;
   plugins.lsp = {
     enable = true;
@@ -50,7 +55,7 @@
         "v"
       ];
       key = "grr";
-      action = "<cmd>:Telescope lsp_references<CR>";
+      action = "<cmd>:lua Snacks.picker.lsp_references()<CR>";
     }
     {
       mode = [
@@ -67,7 +72,7 @@
         "v"
       ];
       key = "gri";
-      action = "<cmd>:Telescope lsp_implementations<CR>";
+      action = "<cmd>:lua Snacks.picker.lsp_implementations()<CR>";
       options.silent = true;
     }
     {
@@ -94,7 +99,7 @@
         "v"
       ];
       key = "gO";
-      action = "<cmd>:Telescope lsp_document_symbols<CR>";
+      action = "<cmd>:lua Snacks.picker.lsp_symbols<CR>";
       options.silent = true;
     }
     {

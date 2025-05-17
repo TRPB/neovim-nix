@@ -2,6 +2,7 @@
   imports = [
     ./clipboard.nix
     ./editing.nix
+    ./explorer.nix
     ./git.nix
     ./lsp.nix
     ./mouse.nix

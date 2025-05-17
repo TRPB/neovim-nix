@@ -5,7 +5,10 @@
       n_lines = 50;
       search_method = "cover_or_next";
     };
-    modules.indentscope = { symbol = "▏"; };
+    modules.indentscope = {
+      symbol = "▏";
+    };
+    modules.icons = { };
   };
 
   plugins.indent-blankline = {

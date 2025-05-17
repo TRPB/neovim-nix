@@ -8,7 +8,7 @@
     };
   };
 
-  plugins.web-devicons.enable = true;
+  #  plugins.web-devicons.enable = true;
 
   extraConfigLua = ''
      actions = require("telescope.actions")
@@ -27,7 +27,7 @@
 
   keymaps = [
     {
-      action = "<cmd>Telescope git_branches<CR>";
+      action = "<cmd>:lua Snacks.picker.git_branches()<CR>";
       key = "<C-g>";
       mode = [
         "n"
@@ -37,7 +37,7 @@
       ];
     }
     {
-      action = "<cmd>Telescope find_files find_command=rg,--files,--no-ignore<CR>";
+      action = "<cmd>:lua Snacks.picker.files()<CR>";
       key = "<C-p>";
       mode = [
         "n"
@@ -47,7 +47,7 @@
       ];
     }
     {
-      action = "<cmd>Telescope live_grep<CR>";
+      action = "<cmd>:lua Snacks.picker.grep()<CR>";
       key = "<C-/>";
       mode = [
         "n"
@@ -57,7 +57,7 @@
       ];
     }
     {
-      action = "<cmd>Telescope buffers<CR>";
+      action = "<cmd>:lua Snacks.picker.buffers()<CR>";
       key = "<C-b>";
       mode = [
         "n"

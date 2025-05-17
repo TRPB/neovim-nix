@@ -85,6 +85,22 @@
     vim.api.nvim_set_hl(0, "DapUIStepOut", { bg = polar2, fg = green })
     vim.api.nvim_set_hl(0, "DapUIStepOutNC", { bg = polar2, fg = green })
     vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = polar4 })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = polar3 })
+    vim.api.nvim_set_hl(0, "SnacksPicker", { bg = "none", fg="none", ctermbg="none", nocombine = true, link="none" })
+    vim.api.nvim_set_hl(0, "SnacksBackdrop", { bg = polar1 })
+    vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { fg = polar3 }) 
+
+    vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { fg = polar3 }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerPrompt", { fg = polar3 }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerMatch", { fg = green }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerDir", { link = "keyword" }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerDirectory", { link = "keyword" }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerPathHidden", { link = "Text" })
+    vim.api.nvim_set_hl(0, "SnacksPickerPathHidden", { link = "Text" })
+
+    vim.api.nvim_set_hl(0, "SnacksPickerGitStatusUntracked", { link = "@symbol" }) 
+    vim.api.nvim_set_hl(0, "SnacksPickerGitStatusModified", { link = "@string.special" })
+    vim.api.nvim_set_hl(0, "SnacksPickerGitStatusStaged", { link = "string" })
+
   '';
 }

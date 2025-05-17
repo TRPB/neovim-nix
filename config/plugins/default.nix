@@ -17,7 +17,6 @@
     ./leap.nix
     ./lualine.nix
     ./mini.nix
-    ./nvim-tree.nix
     ./noice.nix
     ./nvim-notify.nix
     ./octo.nix

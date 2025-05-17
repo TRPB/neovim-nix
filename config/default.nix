@@ -3,10 +3,10 @@
   imports = [
     ./globals.nix
     ./keymaps
-    ./theme.nix
     ./autocmd.nix
     ./plugins
     ./neovide-terminal.nix
+    ./theme.nix
   ];
 
   extraPlugins = with pkgs.vimPlugins; [ vim-nix ];

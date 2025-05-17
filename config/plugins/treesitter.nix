@@ -29,8 +29,8 @@
     local polar4 = "#4c566a";
 
     local snow1 = "#d8dee9";
-    local snow1 = "#e5e9f0";
-    local snow1 = "#eceff4";
+    local snow2 = "#e5e9f0";
+    local snow3 = "#eceff4";
 
     local frost1 = "#8fbcbb";
     local frost2 = "#88c0d0";
@@ -54,6 +54,8 @@
     vim.api.nvim_set_hl(0, "@punctuation.delimiter", { fg = snow1 })
     vim.api.nvim_set_hl(0, "@type", { fg = frost1 })
     vim.api.nvim_set_hl(0, "@constructor", { fg = frost1 })
-    vim.api.nvim_set_hl(0, "@operator", { fg = snow1 })    
+    vim.api.nvim_set_hl(0, "@operator", { fg = snow1 }) 
+    vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" }) 
+
   '';
 }
