@@ -1,6 +1,13 @@
 {
   keymaps = [
-   {
+    {
+      mode = [
+        "c"
+      ];
+      key = "<C-v>";
+      action = "<C-r>+";
+    }
+    {
       mode = [
         "c"
         "v"
@@ -34,7 +41,6 @@
     }
     {
       mode = [
-        "c"
         "v"
         "n"
       ];
