@@ -137,26 +137,6 @@
       key = "<leader>v";
       action = "<cmd>:vsplit<CR>";
     }
-    # {
-    #   mode = [
-    #     "n"
-    #     "t"
-    #     "c"
-    #   ];
-    #   key = "<A-Space>";
-    #   action = "<Cmd>:split +term +startinsert<CR>";
-    # }
-    #
-    # {
-    #   mode = [
-    #     "n"
-    #     "t"
-    #     "c"
-    #   ];
-    #   key = "<A-Return>";
-    #   action = "<Cmd>:tabnew +term<CR>";
-    # }
-    #
     {
       mode = [ "n" ];
       key = "<leader>h";
@@ -174,14 +154,14 @@
         "n"
       ];
       key = "<C-j>";
-      action = "<C-w><Left>";
+      action = "<C-w><Down>";
     }
     {
       mode = [
         "n"
       ];
       key = "<C-k>";
-      action = "<C-w><Left>";
+      action = "<C-w><Up>";
     }
     {
       mode = [
