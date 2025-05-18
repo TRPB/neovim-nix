@@ -9,5 +9,6 @@
     ./quit.nix
     ./save.nix
     ./window-focus.nix
+    ./calculator.nix
   ];
 }
