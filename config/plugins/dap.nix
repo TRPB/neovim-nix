@@ -40,8 +40,7 @@
         "c"
       ];
       key = "<F1>";
-      action = "function() require('dap').continue() end";
-      lua = true;
+      action.__raw = "function() require('dap').continue() end";
     }
     {
       mode = [
@@ -51,8 +50,7 @@
         "c"
       ];
       key = "<F3>";
-      action = "function() require('dapui').toggle() end";
-      lua = true;
+      action.__raw = "function() require('dapui').toggle() end";
     }
     {
       mode = [
@@ -62,8 +60,7 @@
         "c"
       ];
       key = "<F2>";
-      action = "function() require('dap').toggle_breakpoint() end";
-      lua = true;
+      action.__raw = "function() require('dap').toggle_breakpoint() end";
     }
   ];
 
