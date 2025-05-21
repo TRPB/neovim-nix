@@ -55,7 +55,8 @@
         "v"
       ];
       key = "grr";
-      action = "<cmd>:lua Snacks.picker.lsp_references()<CR>";
+      action = "Snacks.picker.lsp_references";
+      lua = true;
     }
     {
       mode = [
@@ -72,8 +73,9 @@
         "v"
       ];
       key = "gri";
-      action = "<cmd>:lua Snacks.picker.lsp_implementations()<CR>";
+      action = "Snacks.picker.lsp_implementations";
       options.silent = true;
+      lua = true;
     }
     {
       mode = [
@@ -81,8 +83,9 @@
         "v"
       ];
       key = "grn";
-      action = "<cmd>:lua vim.lsp.buf.rename()<CR>";
+      action = "vim.lsp.buf.rename";
       options.silent = true;
+      lua = true;
     }
     {
       mode = [
@@ -90,8 +93,9 @@
         "v"
       ];
       key = "gra";
-      action = "<cmd>:lua vim.lsp.buf.code_action()<CR>";
+      action = "vim.lsp.buf.code_action";
       options.silent = true;
+      lua = true;
     }
     {
       mode = [
@@ -99,8 +103,9 @@
         "v"
       ];
       key = "gO";
-      action = "<cmd>:lua Snacks.picker.lsp_symbols<CR>";
+      action = "Snacks.picker.lsp_symbols";
       options.silent = true;
+      lua = true;
     }
     {
       mode = [
@@ -108,7 +113,7 @@
         "v"
       ];
       key = "grs";
-      action = "<cmd>:lua vim.lsp.buf.signature_help()<CR>";
+      action = "vim.lsp.buf.signature_help";
       options.silent = true;
     }
     {
