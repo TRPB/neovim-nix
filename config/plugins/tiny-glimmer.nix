@@ -14,7 +14,7 @@ let
 in
 {
   extraPlugins = [
-    (fromGitHub "0d4453364dafac6bd8efee5268727d25c208e804" "HEAD" "rachartier/tiny-glimmer.nvim")
+    (fromGitHub "f92815723c5c3367c4cd11bf365490cb520f8bf3" "HEAD" "rachartier/tiny-glimmer.nvim")
   ];
   extraConfigLua = ''
     require("tiny-glimmer").setup({
