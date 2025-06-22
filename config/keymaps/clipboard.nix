@@ -2,6 +2,16 @@
   keymaps = [
     {
       mode = [
+        "t"
+      ];
+      key = "<C-v>";
+      action.__raw = "function() 
+          local clipboard_content = vim.fn.getreg('+') -- '+' is the system clipboard register
+          vim.api.nvim_put({ clipboard_content }, 'l', true, true)
+        end";
+    }
+    {
+      mode = [
         "c"
       ];
       key = "<C-v>";
